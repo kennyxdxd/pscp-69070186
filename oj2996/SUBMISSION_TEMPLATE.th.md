@@ -15,13 +15,13 @@
 หมายเลข/ชื่อโจทย์ OJ:
 
 ```text
-3017/Bill
+2996/สลับตัวอักษร
 ```
 
 OJ submission ID ถ้ามีการส่งแล้ว:
 
 ```text
-542542
+542601
 ```
 
 สถานะ OJ:
@@ -33,7 +33,7 @@ Pass
 เวลาที่ใช้คิดและทำโจทย์ด้วยตนเอง:
 
 ```text
-15 นาที
+2 นาที
 ```
 
 เลือกหนึ่งข้อ:
@@ -64,11 +64,11 @@ Pass
 ถ้ายังไม่เข้าใจโจทย์ทั้งหมด ให้เขียนสิ่งที่เข้าใจในตอนนี้ ความเข้าใจอาจยังไม่ครบหรืออาจผิดได้ แต่ต้องพยายามอธิบายอย่างจริงใจ
 
 ```text
-โดยโจทย์นี้จะเกียวกับการคำนวนค่าบริการ ภาษี vat 7% โดย ค่าบริการ จะเริ่มต้นตั้งเเต่ 50 ถึง 1000 โดย vat จะบวกเพิ่มจากค่า สินค้า เเละ บริการ
-Input 
-ราคาของสินค้า
+โดยโจทย์ต้องการให้สลับตัวอักษรข้างหน้าไปข้างหลัง เเละปรับให้เป็นตัวพิมเล็กทั้งหมด
+input 
+ข้อความภาษาอังกฤษ ยาว 5ตัวอักษร
 output
-ราคาที่ต้องจ่าย (รวม vat + ค่าบริการ)
+ข้อความตัวอักษรภาษาอังกฤษแบบกลับด้านตัวพิมพ์เล็ก
 ```
 
 ---
@@ -88,10 +88,8 @@ output
 สามารถเขียนเป็น pseudocode, flowchart idea หรือขั้นตอนความคิดได้
 
 ```text
-Step 1: คำนวนราคาค่าบริการ
-Step 2: เปรียบเทียบว่าค่าบริการว่ามากกว่า 1000 หรือ น้อยกว่า 50 เเล้วเปลียนค่า
-Step 3:บวกค่าบริการ
-Step 4: คำนวน vat75 เเละบวกเข้ากับราคา
+Step 1:รับ input 
+Step 2:print โดยกลับตัวอักษร โดยใช้ [::-1] เเละเปลียน เป็นตัวพิมเล็ก
 ```
 
 ---
@@ -111,7 +109,7 @@ Step 4: คำนวน vat75 เเละบวกเข้ากับรา�
 ห้ามคัดลอกคำอธิบายจากคนอื่น
 
 ```text
-เหมือนกัน เเต่เเตกต่างตรงที่วิธีสุดท้ายที่ผมจะตรวจค่าบริการก่อนที่จะนำไปคำนวน vat
+เหมือนกัน
 ```
 
 ---
@@ -131,31 +129,31 @@ Step 4: คำนวน vat75 เเละบวกเข้ากับรา�
 ทำไมเลือก case นี้:
 
 ```text
-เนื่องจากมีค่ามากกว่านึงพันจะได้ดูว่าค่าบริการจะอยู่ที่ 1000จริงไหม
+
 ```
 
 Input:
 
 ```text
-10100
+
 ```
 
 Expected output:
 
 ```text
-11877.00
+
 ```
 
 Actual output:
 
 ```text
-11877.00
+
 ```
 
 Result:
 
 ```text
-Pass
+Pass / Not Pass
 ```
 
 ### Test Case 2
@@ -163,31 +161,31 @@ Pass
 ทำไมเลือก case นี้:
 
 ```text
-มีค่าบริการตํ่ากว่า 50
+
 ```
 
 Input:
 
 ```text
-120
+
 ```
 
 Expected output:
 
 ```text
-181.90
+
 ```
 
 Actual output:
 
 ```text
-181.90
+
 ```
 
 Result:
 
 ```text
-Pass
+Pass / Not Pass
 ```
 
 ### Test Case 3
@@ -195,31 +193,31 @@ Pass
 ทำไมเลือก case นี้:
 
 ```text
-ค่าบริการอยู่ระหว่าง 50 กับ 1000
+
 ```
 
 Input:
 
 ```text
-1000
+
 ```
 
 Expected output:
 
 ```text
-1177
+
 ```
 
 Actual output:
 
 ```text
-1177
+
 ```
 
 Result:
 
 ```text
-Pass
+Pass / Not Pass
 ```
 
 ---
@@ -229,7 +227,7 @@ Pass
 ใช้ AI กับโจทย์นี้หรือไม่
 
 ```text
-No
+Yes / No
 ```
 
 ถ้าใช้ AI ต้องทำไฟล์นี้ด้วย:
@@ -247,7 +245,7 @@ ai_reflection.md
 ได้ถามเพื่อน TA ผู้สอน หรือบุคคลอื่นเพื่อขอความช่วยเหลือในโจทย์นี้หรือไม่
 
 ```text
-No
+Yes / No
 ```
 
 ถ้าใช่ ให้อธิบายสั้น ๆ ว่าได้รับความช่วยเหลือแบบใด
@@ -301,10 +299,10 @@ No
 
 | Statement | Yes/No |
 |---|---|
-| I wrote this submission in my own words. |yes |
-| I understand my final code. |yes|
-| I recorded the real OJ status. |yes|
-| I did not copy AI-generated text directly into this file. |yes|
-| I did not copy code from another person. |yes|
-| If I received human help, I disclosed it in this file. |yes|
-| I submitted the final code to the OJ by myself. |yes|
+| I wrote this submission in my own words. | |
+| I understand my final code. | |
+| I recorded the real OJ status. | |
+| I did not copy AI-generated text directly into this file. | |
+| I did not copy code from another person. | |
+| If I received human help, I disclosed it in this file. | |
+| I submitted the final code to the OJ by myself. | |
