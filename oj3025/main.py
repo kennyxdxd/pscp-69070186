@@ -1,0 +1,3 @@
+month = input()
+day = input()
+
