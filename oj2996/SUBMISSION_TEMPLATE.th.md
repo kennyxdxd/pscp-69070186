@@ -129,31 +129,31 @@ Step 2:print โดยกลับตัวอักษร โดยใช้ [:
 ทำไมเลือก case นี้:
 
 ```text
-
+เป็นชื้อของผมเเละดูว่าตัวอักษรกลับจริงไหม
 ```
 
 Input:
 
 ```text
-
+kenn
 ```
 
 Expected output:
 
 ```text
-
+nnek
 ```
 
 Actual output:
 
 ```text
-
+nnek
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ### Test Case 2
@@ -161,31 +161,31 @@ Pass / Not Pass
 ทำไมเลือก case นี้:
 
 ```text
-
+ลองตัวอักษรยาวๆ
 ```
 
 Input:
 
 ```text
-
+hello world
 ```
 
 Expected output:
 
 ```text
-
+dlrow olleh
 ```
 
 Actual output:
 
 ```text
-
+dlrow olleh
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ### Test Case 3
@@ -193,31 +193,31 @@ Pass / Not Pass
 ทำไมเลือก case นี้:
 
 ```text
-
+ลองตัวพิมใหญ่
 ```
 
 Input:
 
 ```text
-
+I Love Pscp
 ```
 
 Expected output:
 
 ```text
-
+pcsp evol i
 ```
 
 Actual output:
 
 ```text
-
+pcsp evol i
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ---
@@ -227,7 +227,7 @@ Pass / Not Pass
 ใช้ AI กับโจทย์นี้หรือไม่
 
 ```text
-Yes / No
+No
 ```
 
 ถ้าใช้ AI ต้องทำไฟล์นี้ด้วย:
@@ -245,7 +245,7 @@ ai_reflection.md
 ได้ถามเพื่อน TA ผู้สอน หรือบุคคลอื่นเพื่อขอความช่วยเหลือในโจทย์นี้หรือไม่
 
 ```text
-Yes / No
+No
 ```
 
 ถ้าใช่ ให้อธิบายสั้น ๆ ว่าได้รับความช่วยเหลือแบบใด
@@ -299,10 +299,10 @@ No
 
 | Statement | Yes/No |
 |---|---|
-| I wrote this submission in my own words. | |
-| I understand my final code. | |
-| I recorded the real OJ status. | |
-| I did not copy AI-generated text directly into this file. | |
-| I did not copy code from another person. | |
-| If I received human help, I disclosed it in this file. | |
-| I submitted the final code to the OJ by myself. | |
+| I wrote this submission in my own words. |Yes|
+| I understand my final code. |Yes|
+| I recorded the real OJ status. |Yes|
+| I did not copy AI-generated text directly into this file. |Yes|
+| I did not copy code from another person. |Yes|
+| If I received human help, I disclosed it in this file. |Yes|
+| I submitted the final code to the OJ by myself. |Yes|
