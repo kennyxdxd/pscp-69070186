@@ -1,3 +1,4 @@
+"""3058"""
 a = int(input())
 b = int(input())
 goal = int(input())
