@@ -1,9 +1,17 @@
+"""Arcade of Time: Store Check"""
 store ,a = map(int,input().split())
 openlist = []
-closelist = []
-for i in range(store):
+for _ in range(store):
     opens, close = map(int,input().split())
-    openlist.append(opens)
-    closelist.append(close)
+    openlist.append([opens,close])
 check = list(map(int,input().split()))
-for i in 
+
+answer = []
+for i in check:
+    count = 0
+    for sopen,close in openlist:
+        if sopen <= i < close:
+            count += 1
+    answer.append(str(count))
+
+print(" ".join(answer))
